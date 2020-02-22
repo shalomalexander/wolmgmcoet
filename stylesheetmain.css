@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+  }  
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Titillium Web';
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url("bg1.png");
+    text-align:center;
+}
+
+
+a {
+    text-decoration: none;
+  }
+h1,p{
+    color:white;
+    text-align: center;
+}
+
+.logo img{
+    height:100px;
+    width:110px;
+    padding:5px;
+    transition:all 0.5s;
+}
+
+.logo img:hover{
+    height:110px;
+    width:120px;
+    transition:all 0.5s;
+}
+
+
+.container {
+    max-width: 1170px;;
+    padding: 0px 10px;    
+    margin: 0 auto;  
+  }
+
+/*--------------------------------------------Navigation---------------------------------------------------------------------------*/  
+  
+ 
+
+#navbar {
+    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0))rgb(17, 17, 15);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.8s;
+}
+
+#navbar a {
+    float: left;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin: 10px 10px;
+    font-size: 17px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+.top-wrapper {
+    padding: 100px 0 100px 0;
+    background-size: cover;
+    color: white;
+    text-align: center;
+} 
+
+.top-wrapper .container h1{
+    font-weight: bold;
+    font-size:50px;
+}
+
+.top-wrapper .container .logo{
+    position:absolute;
+    top:10%;
+    left:45%;
+}
+
+/*------------------------------------button----------------------------------------------------------------------------------*/
+}
+.btn-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn-wrapper p {
+    margin: 10px 0;
+  }
+  
+  .signup {
+    background-color: #239b76;
+    transition:all 0.5s;
+  }
+  .signup:hover {
+    background-color: #4cd2aa;
+    transition:all 0.5s;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+.top-wrapper-social-icon{
+    float:left;
+    position:relative;
+    left:8%;
+}
+.top-wrapper-social-icon ul a{
+    color:white;
+    padding:5px 100px;
+    text-align: center;
+    
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      font-size:31px;
+      transition: all 0.5s;
+  }
+
+.mid-wrapper{
+background-size: cover;
+color: white;
+text-align: center;
+padding: 0px 0 100px 0;
+}  
+
+/*---------------------------------mid-wrapper-cards---------------------------------------------------------------------------------------------------------*/
+.container2 {
+    position: relative;
+    height: 300px;
+    width: 600px;
+    top: 60px;
+    left: calc(50% - 300px);
+    display: flex;
+  }
+.card {
+    display: flex;
+    height: 280px;
+    width: 200px;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+  
+  .card:not(:first-child) {
+      margin-left: -50px;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  
+  .title {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+  
+  .bar {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 5px;
+    width: 150px;
+  }
+  
+  .emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+    transition: 0.6s ease-out;
+  }
+  
+  .card:hover .filledbar {
+    width: 120px;
+    transition: 0.4s ease-out;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 150px;
+    left: calc(40% - 60px);
+    right: calc(40% - 60px);
+  }
+  
+  .circle p{
+      font-size:10px;
+      color:white;
+      text-align:left;
+  }
+  
+  .stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+  }
+  .card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }  
+
+ /*---------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
+ 
+/*------------------------------------------------------------card-author-----------------------------------------------------------------------------------*/
+
+  .card-author{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+  .card-author:before,
+  .card-author:after
+  {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: #fff;
+    transition: 0.5s;
+    z-index:-1;
+  }
+  .card-author:hover:before{
+  transform: rotate(20deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  }
+  .card-author:hover:after{
+  transform: rotate(10deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  }
+  .card-author .imgBx{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: #222;
+  transition: 0.5s;
+  z-index: 1;
+  }
+  
+  .card-author:hover .imgBx
+  {
+    bottom: 80px;
+  }
+
+  .card-author .imgBx img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .card-author .details{
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      height: 60px;
+      text-align: center;
+  }
+
+  .card-author .details h2{
+   margin: 0;
+   padding: 0;
+   font-weight: 600;
+   font-size: 20px;
+   color: #777;
+   text-transform: uppercase;
+  } 
+
+  .card-author .details h2 span{
+  font-weight: 500;
+  font-size: 16px;
+  color: #f38695;
+  display: block;
+  margin-top: 5px;
+   } 
